@@ -1,18 +1,24 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <PadreDeportes/>
+  <!-- <PadreDeportes/> -->
+  <!-- <PadreNumeros/> -->
+  <ComicsComponent/>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import PadreDeportes from './components/PadreDeportes.vue'
+// import PadreDeportes from './components/PadreDeportes.vue'
+// import PadreNumeros from './components/PadreNumeros.vue';
+import ComicsComponent from './components/ComicsComponent.vue';
 
 export default {
   name: 'App',
   components: {
     // HelloWorld
-    PadreDeportes
+    // PadreDeportes
+    // PadreNumeros
+    ComicsComponent
   }
 }
 </script>
