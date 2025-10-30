@@ -8,14 +8,21 @@
             <li><router-link to="/seleccionMultiple">Selección Múltiple</router-link></li>
             <li><router-link to="/checkbox">Checkbox</router-link></li>
             <li><router-link to="/numeroDoble">Doble SIN</router-link></li>
-            <li><router-link to="/numeroDoble/77">Doble 77</router-link></li>
+            <li v-for="num in numeros" :key="num">
+                <router-link :to="'/numeroDoble/' + num">Doble {{ num }}</router-link>
+            </li>
         </ul>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'MenuComponent'
+  name: 'MenuComponent',
+  data() {
+    return {
+        numeros: [77,33,22]
+    }
+}
 }
 </script>
 

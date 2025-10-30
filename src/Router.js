@@ -5,7 +5,7 @@ import PadreNumeros from "./components/PadreNumeros.vue";
 import SeleccionMultiple from "./components/SeleccionMultiple.vue";
 import CheckBoxComponent from "./components/CheckBoxComponent.vue";
 import NumeroDoble from "./components/NumeroDoble.vue";
-
+import TablaMultiplicar from "./components/TablaMultiplicar.vue";
 
 const myRoutes = [
     {path: '/deportes', component: PadreDeportes},
@@ -13,7 +13,8 @@ const myRoutes = [
     {path: '/numeros', component: PadreNumeros},
     {path: '/seleccionMultiple', component: SeleccionMultiple},
     {path: '/checkbox', component: CheckBoxComponent},
-    {path: '/numeroDoble/:numero?', component: NumeroDoble}]
+    {path: '/numeroDoble/:numero?', component: NumeroDoble},
+    {path: '/tablaMultiplicar/:numero', component: TablaMultiplicar}]
 
     const router = createRouter({
     history: createWebHistory(),

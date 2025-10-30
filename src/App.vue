@@ -6,7 +6,8 @@
   <!-- <ComicsComponent/> -->
   <!-- <SeleccionMultiple/> -->
   <!-- <CheckBoxComponent/> -->
-  <MenuComponent/>
+  <!-- <MenuComponent/> -->
+   <MenuTablaMultiplicar/>
   <router-view></router-view>
 
 </template>
@@ -18,7 +19,8 @@
 // import ComicsComponent from './components/ComicsComponent.vue';
 // import SeleccionMultiple from './components/SeleccionMultiple.vue';
 // import CheckBoxComponent from './components/CheckBoxComponent.vue';
-import MenuComponent from './components/MenuComponent.vue';
+// import MenuComponent from './components/MenuComponent.vue';
+import MenuTablaMultiplicar from './components/MenuTablaMultiplicar.vue';
 
 export default {
   name: 'App',
@@ -29,7 +31,8 @@ export default {
     // ComicsComponent
     // SeleccionMultiple
     // CheckBoxComponent
-    MenuComponent
+    // MenuComponent
+    MenuTablaMultiplicar
   }
 }
 </script>
